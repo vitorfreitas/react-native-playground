@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Title } from './styled'
+import { Title } from '../../components/Typography'
 
 interface Props {
   data?: object
