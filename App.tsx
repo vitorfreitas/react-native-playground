@@ -1,6 +1,13 @@
 import React from 'react'
+import { ApolloProvider } from 'react-apollo'
+
 import AppContainer from './src/pages/Tabs'
+import client from './graphql'
 
 export default function App() {
-  return <AppContainer />
+  return (
+    <ApolloProvider client={client}>
+      <AppContainer />
+    </ApolloProvider>
+  )
 }

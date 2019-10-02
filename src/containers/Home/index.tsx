@@ -2,6 +2,12 @@ import React from 'react'
 
 import { Title } from './styled'
 
-export default function HomeContainer() {
-  return <Title>Home Container</Title>
+interface Props {
+  data?: object
 }
+
+const HomeContainer: React.SFC<Props> = ({ data }) => (
+  <Title>Home Container</Title>
+)
+
+export default HomeContainer
