@@ -1,7 +1,6 @@
 import React from 'react'
-
-import Home from './src/pages/Home'
+import AppContainer from './src/pages/Tabs'
 
 export default function App() {
-  return <Home />
+  return <AppContainer />
 }
